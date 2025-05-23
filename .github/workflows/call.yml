@@ -11,3 +11,5 @@ jobs:
     secrets:
       PROXY_PASS: ${{ secrets.PROXY_PASS }}
       TARGET_PASS: ${{ secrets.TARGET_PASS }}
+      HOSTNAME: ${{ secrets.HOSTNAME }}
+      USERNAME: ${{ secrets.USERNAME }}
