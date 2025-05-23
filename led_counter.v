@@ -14,11 +14,11 @@ reg  [7:0] led_counter;
 
 always @(posedge clk ) begin
     if(!rst_n) begin
-        counter     <= 32'd0;
+        counter     <= 32'h0;
         led_counter <= 8'h0;
     end else begin
         if(counter >= HALF_SECOND - 1) begin
-            counter     <= 1'b0;
+            counter     <= 32'h0;
             led_counter <= led_counter + 1'b1;
         end else begin
             counter <= counter + 1'b1;
