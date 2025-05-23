@@ -8,7 +8,7 @@ module Blink #(
 
 localparam ONE_SECOND  = CLK_FREQ;
 localparam HALF_SECOND = CLK_FREQ / 2;
-localparam PERIOD = CLK_FREQ/4; 
+localparam PERIOD = CLK_FREQ/8; 
 
 reg [31:0] counter;
 
